@@ -10,7 +10,6 @@ export async function up(knex: Knex): Promise<void> {
 		table.enu('isInDiet', ['yes', 'no']).defaultTo('yes').notNullable()
 		table.date('date').notNullable()
 		table.time('hour').notNullable()
-		
 	})
 }
 
